@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vector-rank-lab"
+version = "0.1.0"
+description = "Exact batched vector search with a NumPy reference and custom CUDA kernels"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+vector-rank = "vector_rank.cli:main"
+
+[tool.setuptools.package-data]
+vector_rank = ["*.cu"]
