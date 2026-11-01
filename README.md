@@ -1,4 +1,4 @@
-# Vector Rank Lab
+# Vector Rank Project
 
 Exact cosine-similarity retrieval for dense embeddings, with a NumPy reference implementation and custom CUDA kernels. Build an index, submit a batch of query vectors, and retrieve ranked document IDs and scores.
 
